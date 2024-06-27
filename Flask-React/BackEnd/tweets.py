@@ -80,7 +80,7 @@ def process_data(value):
         exit()
 
     WebDriverWait(driver, 10).until(lambda driver: driver.find_element(By.XPATH, './/input[@name="password"]'))
-    user_log2 = "786@Twitter%"
+    user_log2 = "TYPE_YOUR_OWN"
     password = driver.find_element(By.XPATH, './/input[@name="password"]').send_keys(user_log2)
     WebDriverWait(driver, 10).until(lambda driver: driver.find_element(By.XPATH, '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/div/div'))
     final_log = driver.find_element(By.XPATH, '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/div/div')
